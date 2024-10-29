@@ -1,8 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 .popup {
+    font-family: Arial, sans-serif;
+    color: 222222;
     display: none; /* Nascondi il popup di default */
     position: fixed;
     left: 0;
