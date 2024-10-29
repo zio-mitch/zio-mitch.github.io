@@ -1,6 +1,4 @@
 .popup {
-    font-family: Arial, sans-serif;
-    color: #222222;
     display: none; /* Nascondi il popup di default */
     position: fixed;
     left: 0;
@@ -19,6 +17,11 @@
     border-radius: 5px;
     text-align: center;
     width: 300px; /* Larghezza del popup */
+}
+
+.popup-content p {
+    font-family: Arial, sans-serif;
+    color: #222222;
 }
 
 .close {
