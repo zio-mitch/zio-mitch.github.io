@@ -1,59 +1,121 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zio Mitch's GitHub Profile Presentation</title>
-        <link rel="stylesheet" href="https://zio-mitch.github.io/statico/privacy-policy.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #282c34;
-                color: #ffffff;
-                margin: 0;
-                padding: 20px;
-                text-align: center;
-            }
-            h1 {
-                color: #61dafb;
-                margin-bottom: 10px;
-            }
-            h2 {
-                color: #ffffff;
-                margin-bottom: 20px;
-            }
-            p {
-                font-size: 1.2em;
-                margin-bottom: 40px;
-            }
-            .profile-pic {
-                border-radius: 50%;
-                width: 150px;
-                height: 150px;
-                border: 3px solid #61dafb;
-                margin-bottom: 20px;
-            }
-            .stats {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin: 20px 0;
-            }
-            .stat {
-                margin: 0 10px;
-                background-color: #3b4048;
-                border-radius: 8px;
-                padding: 20px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            }
-            footer {
-                margin-top: 40px;
-                font-size: 0.9em;
-                color: #b0b0b0;
-            }
-        </style>
+    <link rel="stylesheet" href="https://zio-mitch.github.io/statico/privacy-policy.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34; /* Dark background for contrast */
+            color: #ffffff; /* White text for readability */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #61dafb; /* Light blue for emphasis */
+            margin-bottom: 10px;
+            font-size: 2.5em; /* Increased font size for prominence */
+        }
+
+        h2 {
+            color: #ffffff; /* White for subheading */
+            margin-bottom: 20px;
+            font-size: 1.5em; /* Subtle increase for hierarchy */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            max-width: 600px; /* Limit width for better readability */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #61dafb; /* Border matching header color */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Soft shadow for depth */
+        }
+
+        .contact-links {
+            margin-top: 20px;
+            display: flex; /* Flexbox for horizontal alignment */
+            justify-content: center; /* Center the links */
+            flex-wrap: wrap; /* Wrap links if necessary */
+        }
+
+        .contact-links a {
+            color: #61dafb; /* Link color */
+            text-decoration: none; /* Remove underline */
+            margin: 0 15px; /* Spacing between links */
+            transition: color 0.3s; /* Smooth transition for hover */
+        }
+
+        .contact-links a:hover {
+            color: #21a1f1; /* Darker blue on hover */
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .stat {
+            margin: 0 10px;
+            background-color: #3b4048; /* Darker card background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #b0b0b0; /* Light gray for footer */
+        }
+
+        /* Popup Styles */
+        .popup {
+            display: none; /* Initially hidden */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #fff; /* White background for popup */
+            padding: 20px;
+            border-radius: 10px;
+            color: #333; /* Dark text color for readability */
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333; /* Dark color for close button */
+        }
+    </style>
 </head>
 <body>
 
@@ -72,20 +134,20 @@
     
     <img src="https://avatars.githubusercontent.com/u/5042579?v=4" alt="Zio Mitch's Profile Picture" class="profile-pic">
 
-    <div style="margin-top: 20px;">
+    <div class="contact-links">
         <a href="https://wa.me/393332738806" target="_blank" title="WhatsApp Call">
-            <img src="https://zio-mitch.github.io/statico/icons/whatsapp.svg" alt="WhatsApp" style="width: 40px; height: auto; margin: 0 10px;"/>
-            <span style="margin-left: 5px;">Call me on WhatsApp</span>
+            <img src="https://zio-mitch.github.io/statico/icons/whatsapp.svg" alt="WhatsApp" style="width: 40px; height: auto; margin-right: 5px;"/>
+            Call me on WhatsApp
         </a>
         
         <a href="mailto:michelecarino84@gmail.com" title="Email Me">
-            <img src="https://zio-mitch.github.io/statico/icons/email.svg" alt="Email" style="width: 40px; height: auto; margin: 0 10px;"/>
-            <span style="margin-left: 5px;">Email me</span>
+            <img src="https://zio-mitch.github.io/statico/icons/email.svg" alt="Email" style="width: 40px; height: auto; margin-right: 5px;"/>
+            Email me
         </a>
         
         <a href="/cv_michele_carino_en.pdf" download title="Download CV">
-            <img src="https://zio-mitch.github.io/statico/icons/download.svg" alt="Download CV" style="width: 40px; height: auto; margin: 0 10px;"/>
-            <span style="margin-left: 5px;">Download resume</span>
+            <img src="https://zio-mitch.github.io/statico/icons/download.svg" alt="Download CV" style="width: 40px; height: auto; margin-right: 5px;"/>
+            Download resume
         </a>
     </div>
 
@@ -106,4 +168,3 @@
 
 </body>
 </html>
-
