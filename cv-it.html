@@ -5,127 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Michele Carino</title>
     <style>
+        /* Global styles */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
-        .contact-info {
-            margin-top: 10px;
-        }
-        h1, h2, h3 {
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
             color: #2a4d8f;
         }
-        .section {
-            margin-top: 20px;
+        header p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #6c757d;
+        }
+        .contact-info p a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .contact-info p a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #2a4d8f;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        p, ul, li {
+            margin: 0;
+            padding: 0;
         }
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding-left: 15px;
+        }
+        ul li::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section p {
+            font-size: 1rem;
+            color: #495057;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #adb5bd;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Michele Carino</h1>
-        <p>Responsabile sviluppo software presso MultiDialogo</p>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:michelecarino84@gmail.com">michelecarino84@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/michele-carino">www.linkedin.com/in/michele-carino</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/mikaround">www.instagram.com/mikaround</a></p>
-        </div>
-    </header>
-    <section class="section">
-        <h2>Riepilogo</h2>
-        <p>
-            Sviluppatore software con oltre 20 anni di esperienza, esperto sia nella scrittura di codice che nella gestione di team.
-            Mi caratterizzano precisione tecnica, pragmatismo e una forte passione per la crescita continua. Sono specializzato nello
-            sviluppo di soluzioni software ad alto impatto e nella gestione di progetti complessi con un focus sulle esigenze tecniche
-            e sugli obiettivi aziendali.
-        </p>
-    </section>
-    <section class="section">
-        <h2>Esperienza lavorativa</h2>
-        <ul>
-            <li>
-                <strong>Responsabile sviluppo software - Multidialogo</strong> (Gennaio 2021 - Presente)
-                <ul>
-                    <li>Transizione verso architetture a microservizi per migliorare scalabilità e flessibilità.</li>
-                    <li>Introduzione di pratiche agili e DevOps come Kanban e continuous integration.</li>
-                    <li>Implementazione del Test-Driven Development e automazione dei test.</li>
-                    <li>Promozione di una cultura dell'innovazione continua.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Senior Software Engineer - Multidialogo</strong> (Febbraio 2019 - Dicembre 2020)
-                <ul>
-                    <li>Introduzione di buone pratiche come continuous integration e TDD.</li>
-                    <li>Refactoring delle aree più sollecitate per migliorare manutenibilità e stabilità.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Senior Software Engineer - Caffeina</strong> (Luglio 2018 - Dicembre 2018)
-                <ul>
-                    <li>Acquisizione di competenze sulle dinamiche di agenzie digitali.</li>
-                    <li>Contributo all'organizzazione strutturale e alle esigenze dei clienti.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Senior Software Engineer - ProntoPro</strong> (Giugno 2015 - Aprile 2017)
-                <ul>
-                    <li>Progettazione delle prime versioni del software in fase di startup.</li>
-                    <li>Gestione della scalabilità e trade-off architetturali.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Sviluppatore Web Back-End - Facile.it</strong> (Dicembre 2014 - Giugno 2015)
-                <ul>
-                    <li>Sviluppo di applicativi PHP lato back-end.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Sviluppatore Web - ideato</strong> (Luglio 2013 - Novembre 2014)
-                <ul>
-                    <li>Apprendimento delle metodologie agili e delle teorie della produzione lean.</li>
-                    <li>Perfezionamento delle conoscenze di PHP e tecniche di sviluppo moderne.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Sviluppatore Web - Varie aziende di consulenza e web agencies</strong> (Aprile 2008 - Luglio 2013)
-                <ul>
-                    <li>Esperienze in PHP, database MySQL e sistemi Unix-like.</li>
-                    <li>Conoscenze front-end: JavaScript, XHTML e CSS2.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Sviluppatore software stagista - IBM</strong> (Agosto 2007 - Marzo 2008)
-                <ul>
-                    <li>Prima esperienza pratica nel settore dello sviluppo software.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <section class="section">
-        <h2>Formazione</h2>
-        <ul>
-            <li><strong>Maturità scientifica</strong> - Liceo Scientifico Giovanni Vailati (1998 - 2003)</li>
-        </ul>
-    </section>
-    <section class="section">
-        <h2>Competenze principali</h2>
-        <ul>
-            <li>Comunicazione</li>
-            <li>Revisione della progettazione</li>
-            <li>Gestione della vulnerabilità</li>
-        </ul>
-    </section>
-    <section class="section">
-        <h2>Lingue</h2>
-        <ul>
-            <li>Inglese - Livello Professionale Completo</li>
-        </ul>
-    </section>
+    <div class="container">
+        <header>
+            <h1>Michele Carino</h1>
+            <p>Responsabile sviluppo software presso MultiDialogo</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:michelecarino84@gmail.com">michelecarino84@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/michele-carino">linkedin.com/in/michele-carino</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/mikaround">instagram.com/mikaround</a></p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Riepilogo</h2>
+            <p>Sviluppatore software con oltre 20 anni di esperienza, esperto sia nella scrittura di codice che nella gestione di team. 
+               Mi caratterizzano precisione tecnica, pragmatismo e una forte passione per la crescita continua. 
+               Specializzato nello sviluppo di soluzioni software ad alto impatto e nella gestione di progetti complessi.</p>
+        </section>
+
+        <section class="section">
+            <h2>Esperienza lavorativa</h2>
+            <ul>
+                <li>
+                    <h3>Responsabile sviluppo software - Multidialogo (Gennaio 2021 - Presente)</h3>
+                    <ul>
+                        <li>Transizione verso architetture a microservizi per migliorare scalabilità e flessibilità.</li>
+                        <li>Introduzione di pratiche agili e DevOps come Kanban e continuous integration.</li>
+                        <li>Implementazione del Test-Driven Development e automazione dei test.</li>
+                        <li>Promozione di una cultura dell'innovazione continua.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Senior Software Engineer - Multidialogo (Febbraio 2019 - Dicembre 2020)</h3>
+                    <ul>
+                        <li>Introduzione di buone pratiche come continuous integration e TDD.</li>
+                        <li>Refactoring delle aree più sollecitate per migliorare manutenibilità e stabilità.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Senior Software Engineer - Caffeina (Luglio 2018 - Dicembre 2018)</h3>
+                    <ul>
+                        <li>Acquisizione di competenze sulle dinamiche di agenzie digitali.</li>
+                        <li>Contributo all'organizzazione strutturale e alle esigenze dei clienti.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Senior Software Engineer - ProntoPro (Giugno 2015 - Aprile 2017)</h3>
+                    <ul>
+                        <li>Progettazione delle prime versioni del software in fase di startup.</li>
+                        <li>Gestione della scalabilità e trade-off architetturali.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Sviluppatore Web Back-End - Facile.it (Dicembre 2014 - Giugno 2015)</h3>
+                    <ul>
+                        <li>Sviluppo di applicativi PHP lato back-end.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Sviluppatore Web - ideato (Luglio 2013 - Novembre 2014)</h3>
+                    <ul>
+                        <li>Apprendimento delle metodologie agili e delle teorie della produzione lean.</li>
+                        <li>Perfezionamento delle conoscenze di PHP e tecniche di sviluppo moderne.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Sviluppatore Web - Varie aziende di consulenza e web agencies (Aprile 2008 - Luglio 2013)</h3>
+                    <ul>
+                        <li>Esperienze in PHP, database MySQL e sistemi Unix-like.</li>
+                        <li>Conoscenze front-end: JavaScript, XHTML e CSS2.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Sviluppatore software stagista - IBM (Agosto 2007 - Marzo 2008)</h3>
+                    <ul>
+                        <li>Prima esperienza pratica nel settore dello sviluppo software.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Formazione</h2>
+            <ul>
+                <li>
+                    <h3>Maturità scientifica - Liceo Scientifico Giovanni Vailati (1998 - 2003)</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Competenze principali</h2>
+            <ul>
+                <li>Comunicazione</li>
+                <li>Revisione della progettazione</li>
+                <li>Gestione della vulnerabilità</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Lingue</h2>
+            <ul>
+                <li>Inglese - Livello Professionale Completo</li>
+            </ul>
+        </section>
+
+        <footer>
+            &copy; 2024 Michele Carino. Tutti i diritti riservati.
+        </footer>
+    </div>
 </body>
 </html>
