@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaggio di Porta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 21cm; /* A4 width */
+            height: 29.7cm; /* A4 height */
+            padding: 2cm;
+            background-color: white;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .instructions {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .qr-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">
+            <p>Sono impegnato e sono spiacente</p>
+            <p>I am busy and I am sorry</p>
+        </div>
+
+        <div class="qr-placeholder">
+            <img src="qr-now.jpg" alt="QR Code" />
+        </div>
+
+        <div class="instructions">
+            <p>Per quanto possa sembrare scortese, le motivazioni possono essere visionate usando il QR code.</p>
+            <p>As impolite as it may seem, the reasons can be viewed using the QR code.</p>
+        </div>
+    </div>
+
+</body>
+</html>
